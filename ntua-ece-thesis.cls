@@ -299,7 +299,7 @@
             \normalsize{Μ}\small{ΕΤΣΟΒΙΟ}
             \normalsize{Π}\small{ΟΛΥΤΕΧΝΕΙΟ}} \\
         \small
-        ΤΜΗΜΑ ΗΛΕΚΤΡΟΛΟΓΩΝ ΜΗΧΑΝΙΚΩΝ ΚΑΙ \\
+        ΣΧΟΛΗ ΗΛΕΚΤΡΟΛΟΓΩΝ ΜΗΧΑΝΙΚΩΝ ΚΑΙ \\
         ΜΗΧΑΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ \\
         \@thesissector \\
         % If lab is not defined don't show anything, else show the lab.
