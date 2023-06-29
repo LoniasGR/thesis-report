@@ -12,6 +12,7 @@
 %% - Langauges
 %% - Images
 %% - Links
+%% - Tables
 %% - Bibliography
 %% - Arguments
 %% - Title page
@@ -138,6 +139,12 @@
 
 \NewCommandCopy{\oldurl}{\url}
 \renewcommand{\url}[1]{\en{\oldurl{#1}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Links
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{tabularx}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Bibliography
@@ -289,22 +296,22 @@
     \thispagestyle{empty}
 
     \begin{center}
-    \begin{minipage}{0.2\textwidth}
-        \includegraphics[width=2.5cm]{\pyrforos}
-    \end{minipage}%
-    %
-    \begin{minipage}{0.6\textwidth}
-        \textbf{%
-            \normalsize{Ε}\small{ΘΝΙΚΟ}
-            \normalsize{Μ}\small{ΕΤΣΟΒΙΟ}
-            \normalsize{Π}\small{ΟΛΥΤΕΧΝΕΙΟ}} \\
-        \small
-        ΣΧΟΛΗ ΗΛΕΚΤΡΟΛΟΓΩΝ ΜΗΧΑΝΙΚΩΝ ΚΑΙ \\
-        ΜΗΧΑΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ \\
-        \@thesissector \\
-        % If lab is not defined don't show anything, else show the lab.
-        \ifdefempty{\@thesislab}{}{\@thesislab \\}
-    \end{minipage}
+        \begin{minipage}{0.2\textwidth}
+            \includegraphics[width=2.5cm]{\pyrforos}
+        \end{minipage}%
+        %
+        \begin{minipage}{0.6\textwidth}
+            \textbf{%
+                \normalsize{Ε}\small{ΘΝΙΚΟ}
+                \normalsize{Μ}\small{ΕΤΣΟΒΙΟ}
+                \normalsize{Π}\small{ΟΛΥΤΕΧΝΕΙΟ}} \\
+            \small
+            ΣΧΟΛΗ ΗΛΕΚΤΡΟΛΟΓΩΝ ΜΗΧΑΝΙΚΩΝ ΚΑΙ \\
+            ΜΗΧΑΝΙΚΩΝ ΥΠΟΛΟΓΙΣΤΩΝ \\
+            \@thesissector \\
+            % If lab is not defined don't show anything, else show the lab.
+            \ifdefempty{\@thesislab}{}{\@thesislab \\}
+        \end{minipage}
 
         \vspace{8ex}
         \large \textbf{\@title} \\
@@ -354,18 +361,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\@creativecommons}{%
-Η Εργασία διατίθεται με άδεια \en{Creative Commons} Αναφορά Δημιουργού 4.0 Διεθνές.
-Για να δείτε ένα αντίγραφο αυτής της άδειας, επισκεφθείτε το \url{http://creativecommons.org/licenses/by/4.0/}
-ή στείλετε επιστολή στο \en{Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.}
+    Η Εργασία διατίθεται με άδεια \en{Creative Commons} Αναφορά Δημιουργού 4.0 Διεθνές.
+    Για να δείτε ένα αντίγραφο αυτής της άδειας, επισκεφθείτε το \url{http://creativecommons.org/licenses/by/4.0/}
+    ή στείλετε επιστολή στο \en{Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.}
 }
 
 \newcommand{\@nonprofituse}{%
-Απαγορεύεται η αντιγραφή, αποθήκευση και διανομή της παρούσας Εργασίας,
-εξ ολοκλήρου ή τμήματος αυτής, για εμπορικό σκοπό. Επιτρέπεται η ανατύπωση,
-αποθήκευση και διανομή για σκοπό μη κερδοσκοπικό, εκπαιδευτικής ή
-ερευνητικής φύσης, υπό την προϋπόθεση να αναφέρεται η πηγή προέλευσης και
-να διατηρείται το παρόν μήνυμα. Ερωτήματα που αφορούν τη χρήση της Εργασίας
-για κερδοσκοπικό σκοπό πρέπει να απευθύνονται προς τον συγγραφέα.
+    Απαγορεύεται η αντιγραφή, αποθήκευση και διανομή της παρούσας Εργασίας,
+    εξ ολοκλήρου ή τμήματος αυτής, για εμπορικό σκοπό. Επιτρέπεται η ανατύπωση,
+    αποθήκευση και διανομή για σκοπό μη κερδοσκοπικό, εκπαιδευτικής ή
+    ερευνητικής φύσης, υπό την προϋπόθεση να αναφέρεται η πηγή προέλευσης και
+    να διατηρείται το παρόν μήνυμα. Ερωτήματα που αφορούν τη χρήση της Εργασίας
+    για κερδοσκοπικό σκοπό πρέπει να απευθύνονται προς τον συγγραφέα.
 
 
 }
